@@ -7,7 +7,7 @@ import android.view.View;
 public class Menu extends Activity
 {
 	
-	// Testando um teste.... xD
+	// Testando um teste.... 2xD
 	@Override
 	protected void onCreate(Bundle savedInstanceState)
 	{
