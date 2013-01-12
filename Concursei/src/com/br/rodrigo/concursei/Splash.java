@@ -1,11 +1,17 @@
 package com.br.rodrigo.concursei;
 
+import java.io.IOException;
+
+import com.br.rodrigo.concursei.util.DataBaseHelper;
+
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Window;
 import android.view.WindowManager;
 import android.app.Activity;
 import android.content.Intent;
+import android.database.SQLException;
 
 
 public class Splash extends Activity {
@@ -21,6 +27,25 @@ public class Splash extends Activity {
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         //mPlayer = MediaPlayer.create(Splash.this, R.pasta.nomeArq);
         //mPlayer.start();
+        
+        DataBaseHelper dbHelper = new DataBaseHelper(this);
+        // CRIA O BANCO DE DADOS
+        try
+        {
+        	dbHelper.createDataBase();
+        }catch(IOException ioe)
+        {
+        	Log.v("DB_HELPER", ioe.getMessage());
+        }
+        // ABRE O BANCO DE DADOS
+        try
+        {
+        	dbHelper.openDataBase();
+        }catch(SQLException sqle)
+        {
+        	Log.v("DB_HELPER", sqle.getMessage());
+        }
+        
 		Thread tempo = new Thread()
 		{
 			@Override

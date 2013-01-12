@@ -23,6 +23,13 @@
         
         <activity android:name=".Menu">
         </activity> 
+        
+        <activity android:name=".Iniciar"
+            	  android:parentActivityName=".Menu">
+            <meta-data android:name="android.support.PARENT_ACTIVITY"
+                	   android:value="com.br.rodrigo.concursei.Main"/>
+            
+        </activity>
     </application>
 
 </manifest>
