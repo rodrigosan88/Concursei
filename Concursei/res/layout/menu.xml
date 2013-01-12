@@ -32,6 +32,7 @@
 	        android:id="@+id/btMenuOpcoes"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
+	        android:height="40dp"
 	        android:text="@string/menu_opcoes"
 	        android:textColor="#FFFFFF"
 	        android:background="@drawable/button_custom"/>
@@ -43,6 +44,7 @@
 	        android:id="@+id/btMenuEstatisticas"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
+	        android:height="40dp"
 	        android:text="@string/menu_estatisticas"
 	        android:textColor="#FFFFFF"
 	        android:background="@drawable/button_custom"/>
@@ -54,6 +56,7 @@
 	        android:id="@+id/btMenuSobre"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
+	        android:height="40dp"
 	        android:text="@string/menu_sobre"
 	        android:textColor="#FFFFFF"
 	        android:background="@drawable/button_custom"/>
