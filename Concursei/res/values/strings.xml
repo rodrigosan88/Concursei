@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">Concursei</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_menu">Menu</string>
+    <string name="menu_iniciar">Iniciar</string>
+    <string name="menu_opcoes">Opções</string>
+    <string name="menu_estatisticas">Estatísticas</string>
+    <string name="menu_sobre">Sobre</string>
+
+</resources>

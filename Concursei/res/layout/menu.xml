@@ -1,0 +1,62 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="@drawable/back1">
+        
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="fill_vertical"
+	    android:padding="10dp" >
+
+	    <Button
+	        android:id="@+id/btMenuIniciar"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:height="40dp"
+	        android:text="@string/menu_iniciar"
+	        android:textColor="#FFFFFF"
+	        android:background="@drawable/button_custom"
+	        android:onClick="iniciar"
+	        />
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+	    	 	  android:layout_width="fill_parent"
+	    	 	  android:padding="10dp">
+	
+	    <Button
+	        android:id="@+id/btMenuOpcoes"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/menu_opcoes"
+	        android:textColor="#FFFFFF"
+	        android:background="@drawable/button_custom"/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+	    	 	  android:layout_width="fill_parent"
+	    	 	  android:padding="10dp">	
+		<Button
+	        android:id="@+id/btMenuEstatisticas"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/menu_estatisticas"
+	        android:textColor="#FFFFFF"
+	        android:background="@drawable/button_custom"/>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+	    	 	  android:layout_width="fill_parent"
+	    	 	  android:padding="10dp">
+		<Button
+	        android:id="@+id/btMenuSobre"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="@string/menu_sobre"
+	        android:textColor="#FFFFFF"
+	        android:background="@drawable/button_custom"/>
+	</LinearLayout>
+	
+</LinearLayout>
